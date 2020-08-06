@@ -22,7 +22,165 @@
   font-display: swap;
 }
 
-body {
-  background: skyblue;
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'AvenirNext LT Pro';
+  font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__right-btn {
+  background-color: skyblue;
+}
+
+.header__right-image {
+  background-image: url(../assets/images/Mohan-muruge.jpg);
+  background-size: cover;
+  background-position: left center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero__image {
+  background-image: url(../assets/images/video-list-0.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 183px;
+}
+
+.comments {
+  color: #323232;
+  margin: 2rem 1rem 0;
+}
+
+.comments__heading {
+  margin-bottom: 2.5rem;
+}
+
+.comments__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 2rem;
+}
+
+.comments__image {
+  background-image: url(../assets/images/Mohan-muruge.jpg);
+  background-size: cover;
+  background-position: left center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: relative;
+  top: 1.687rem;
+  margin-right: 1.25rem;
+}
+
+.comments__form-name {
+  margin: 0.5rem 0 1.5rem 0;
+  border-radius: 0.25rem;
+  height: 3rem;
+  width: 70vw;
+}
+
+.comments__form-message {
+  background-color: #fafafa;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 0.25rem;
+  height: 16.393vh;
+  width: 70vw;
+  padding: 15px;
+  line-height: 20px;
+}
+
+.comments__form-btn {
+  background-color: blue;
+  border: transparent;
+  color: white;
+  border-radius: 0.25rem;
+  height: 7.868vh;
+  width: 70vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.comments__form-label {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.reviews {
+  color: #323232;
+  margin: 0 1rem 2.5rem;
+}
+
+.reviews__block {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.reviews__image {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.reviews__inside {
+  width: 80vw;
+}
+
+.reviews__inside-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.reviews__inside-first-para {
+  margin: 0;
+}
+
+.reviews__inside-first-para--color {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+.reviews__inside-second-para {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
+.videos__item-image {
+  height: 183px;
+  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */

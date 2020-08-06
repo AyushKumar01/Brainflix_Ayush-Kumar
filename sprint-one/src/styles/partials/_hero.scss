@@ -1,0 +1,12 @@
+.hero {
+    &__image {
+        background-image: url(../assets/images/video-list-0.jpg);
+        background-size: cover; 
+        background-position: center;
+        height: 183px;
+    }
+
+    &__controller {
+    
+    }
+}

@@ -1,0 +1,15 @@
+.header {
+    &__right-btn {
+        background-color: skyblue;
+    }
+
+    &__right-image {
+        background-image: url(../assets/images/Mohan-muruge.jpg);
+        background-size: cover; 
+        background-position: left center;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        background-color: $backgroundColor;
+    }
+}
