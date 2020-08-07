@@ -1,0 +1,99 @@
+.main {
+    &__controller {
+        max-width: 100%;
+        
+    }
+    // &__channel {
+    //    margin: auto 1rem;
+    // }
+    
+    &__content {
+       border-bottom: 1px solid $backgroundColor;
+       padding-bottom: 1.5rem;
+       margin: auto 1rem;
+    }
+
+    &__title {
+        margin: 1.75rem 0 1rem 0;
+    }
+    &__title-heading {
+        @include hOneMobile;
+        margin: 0;
+    }
+
+    &__channel-first {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__channel-second {
+        display: flex;
+        align-items: baseline;
+    }
+    &__channel-fistBox{
+        display: flex;
+    }
+
+
+    &__channel-heading {
+        margin: 0 0.5rem 2rem 0;
+    }
+     
+    
+    &__channel-boxOne {
+        margin-right: 2.5rem;
+    }
+    &__channel-fistBox-icon {
+        margin-right: 0.5rem;
+    }
+    
+    &__channel-fistBox {
+        margin-right: 2.5rem;
+    }
+
+    &__description {
+        // @include paraMobile;
+        margin: 1.5rem 1rem 0;
+    }
+
+    // // ==============tablet====================
+    @include tablet {
+
+        &__title {
+            margin: 3rem 0 1.5rem;
+        }
+        &__content {
+            margin: auto 1.5rem;
+        }
+       
+        &__channel {
+           display: flex;
+           justify-content: space-between;
+        //    margin: auto 1.5rem;
+        }
+        &__title-heading {
+            @include hOneTablet;
+        }
+        &__channel-heading {
+            margin: 0;
+        }
+
+        &__description {
+            @include paraTablet;
+            margin: 2.5rem 0 4rem 1.5rem;
+            width: 519px;
+        }
+    
+    }
+
+    // ==================desktop=========================
+    @include desktop {
+        &__content {
+            width: 712px;
+        }
+
+
+    }
+
+
+}

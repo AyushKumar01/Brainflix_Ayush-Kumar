@@ -1,6 +1,58 @@
 .header {
+    margin: auto 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 169px;
+    align-items: center;
+     
+    &__logo {
+        height: 3rem;
+
+        // display: flex;
+        // flex-direction: column;
+    }
+
+    &__logo-image {
+        margin-top: 0.7rem;
+        // height: 48px;
+        // width: auto;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__form-label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    &__form-input {
+        border-radius: 0.25rem;
+        background-color: $offWhite;
+        border: 1px solid $backgroundColor;
+        height: 3rem;
+        width: 288px;
+        text-indent: 40px;
+    }
+
+    &__right{
+        display: flex;
+        margin: 0.5rem 0 1rem 0;
+        position: relative;
+        // width: 288px;
+    }
+
     &__right-btn {
-        background-color: skyblue;
+       background-color: rgb(38, 150, 241);
+       border-radius: 4px;
+       border-color: transparent;
+       width: 224px;
+       margin-right: 1rem;
+       color: $white;
+
     }
 
     &__right-image {
@@ -11,5 +63,56 @@
         width: 3rem;
         border-radius: 50%;
         background-color: $backgroundColor;
+    }
+
+    &__right-plus {
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+    }
+
+
+    // ==================table=====================
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto 1.5rem;
+        height: 80px;
+
+        &__logo {
+            // margin-right: 169px;
+        }
+
+        &__half {
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__form-input {
+            margin-right: 1.5rem;
+            width: 220px;
+        }
+
+        &__right {
+            margin: 0;
+        }
+
+        &__right-btn {
+            width: 115px;
+            margin-right: 1.5rem;
+        }
+
+        
+        &__right-plus {
+            left: 0.5rem;
+        }
+    }
+
+//   ============desktop==================
+
+    @include desktop {
+        margin: auto 12.5vw;
     }
 }

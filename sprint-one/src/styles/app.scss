@@ -5,6 +5,7 @@
 @import './partials/resets';
 @import './partials/header';
 @import './partials/hero';
+@import './partials/main';
 @import './partials/commentsForm';
 @import './partials/comments';
 @import './partials/videoList';
@@ -12,3 +13,9 @@
 // body {
 // 	background: skyblue;
 // }
+.lowerDom{
+    @include desktop{
+            display: flex;
+            margin: auto 180px;
+    }
+}

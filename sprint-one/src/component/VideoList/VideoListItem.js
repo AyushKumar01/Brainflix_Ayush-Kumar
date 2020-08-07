@@ -6,8 +6,8 @@ function VideoListItem(props) {
             <div className="videos__item-boxOne">
                 <img  className="videos__item-image" src={props.videoData.image} />
             </div>
-            <div className="videos__item-boxOne">
-                <h3 className="videos__item-title">{props.videoData.title}</h3>
+            <div className="videos__item-boxTwo">
+                <h4 className="videos__item-title">{props.videoData.title}</h4>
                 <p className="videos__item-channel">{props.videoData.channel}</p>
             </div>
         </li>

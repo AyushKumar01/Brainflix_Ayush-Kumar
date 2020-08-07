@@ -1,6 +1,5 @@
 .reviews {   
     color: #323232;
-    // @include mobileText;
     margin: 0 1rem 2.5rem;
 
     &__block {
@@ -40,15 +39,16 @@
         margin-bottom: 1.5rem;
         margin-top: 0.5rem;
         font-weight: normal;
+        
         // width: 67.18vw;
     }
 
 
     // ==============reviws-tablet==================
     
-//         @include tablet {
-//             @include tabletText;
-//             margin: 0 7.5rem 2.5rem;
+        @include tablet {
+            width: 720px;
+            margin: 0 1.5rem 2.5rem;
 
 //             &__block {
 //                 border-bottom: 1px solid $backgroundColor;
@@ -59,37 +59,44 @@
 //                 width: unset;
 //                 // padding: 24px 0 8px 0;
 //             }
+            &__image {
+                margin-right: 1rem;
+            }
 
-//             &__inside-first {
+            // &__inside {
+            //     width: 624px;
+            // }
 
-//                 display: flex;
-//                 justify-content: flex-start;
-//                 align-items: baseline;
-//             }
 
-//             &__inside-first-para {
-//                 margin-right: .75rem;
-//             }
+            &__inside-first {
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+            }
+
+            &__inside-first-para {
+                margin-right: .75rem;
+            }
 
 //             &__inside-second-para {
 //                 // margin-bottom: 24px;
 //                 width: 61.458vw;
 //                 font-weight: normal;
 //             }
-//         }
+        }
 
 //     // ===============reviews-desktop============
 
 
-//         @include desktop {
+        @include desktop {
 //             margin: 0 31.66vw 2.5rem 31.66vw;
-//             &__block {
-//                 border-bottom: 1px solid $backgroundColor;
-//                 width: 36.66vw;
-//             }
+            &__inside {
+                width: 624px;
+            }
 //             &__inside-second-para {
 //                 width: 32.77vw;
 //                 font-weight: normal;
 //             }
-//         }
+        }
 }

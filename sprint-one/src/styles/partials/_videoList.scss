@@ -1,6 +1,63 @@
 .videos {
-    &__item-image {
-        height: 183px;
-        width: 100%;
+margin: 2.5rem 1rem 0;
+    &__heading {
+        @include hForeMobile;
+        color: $backgroundColor;
     }
+
+    &__item-image {
+        border-radius: 5px;
+        width: 120px;
+        height: 70px;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item-boxOne {
+        margin-right: 16px;
+    }
+    &__item-boxTwo {
+        
+    }
+
+    &__item-title {
+        margin: 0;
+        // width: 135px;
+        height: 36px;
+        overflow: hidden;
+        @include hForeMobile;
+    }
+
+    &__item-channel {
+        margin: 0.5rem 0 ;
+        @include paraMobile;
+    }
+    // ==============tablet=================
+
+    @include tablet {
+        margin: 2.5rem 1.5rem 0;
+    
+
+        &__heading {
+            margin-bottom: 2.5rem;
+        }
+
+        &__item-title {
+            width: 177px;
+            height: unset;
+            @include hForeTablet;
+        }
+        
+    &__item-channel {
+        @include paraTablet;
+    }
+
+    }
+
+
+
+
 }

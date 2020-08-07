@@ -1,12 +1,130 @@
 .hero {
-    &__image {
-        background-image: url(../assets/images/video-list-0.jpg);
-        background-size: cover; 
-        background-position: center;
-        height: 183px;
+    background-color: black;
+    height: 183px;
+    &__controller {
+        // border-collapse: ;
+        max-width: 100%;
+        // margin: auto 1.5rem;
+        
+    }
+    @include tablet {
+        height: 400px;
+        // padding: auto 1.5rem;
+        // height: 400px;
+
+        &__controller {
+            margin: 0 24px;
+            height: 400px;
+            // width: 700px;
+            border: 0;
+        }
+       
     }
 
-    &__controller {
-    
+    @include desktop {
+        height: 540px;
+        // padding: auto 1.5rem;
+        // height: 400px;
+
+        &__controller {
+            margin: 0 248px;
+            height: 540px;
+            // width: 700px;
+            border: 0;
+        }
+       
     }
+//     // &__channel {
+//     //    margin: auto 1rem;
+//     // }
+    
+//     &__content {
+//        border-bottom: 1px solid $backgroundColor;
+//        padding-bottom: 1.5rem;
+//        margin: auto 1rem;
+//     }
+
+//     &__title {
+//         margin: 1.75rem 0 1rem 0;
+//     }
+//     &__title-heading {
+//         @include hOneMobile;
+//         margin: 0;
+//     }
+
+//     &__channel-first {
+//         display: flex;
+//         align-items: baseline;
+//     }
+
+//     &__channel-second {
+//         display: flex;
+//         align-items: baseline;
+//     }
+//     &__channel-fistBox{
+//         display: flex;
+//     }
+
+
+//     &__channel-heading {
+//         margin: 0 0.5rem 2rem 0;
+//     }
+     
+    
+//     &__channel-boxOne {
+//         margin-right: 2.5rem;
+//     }
+//     &__channel-fistBox-icon {
+//         margin-right: 0.5rem;
+//     }
+    
+//     &__channel-fistBox {
+//         margin-right: 2.5rem;
+//     }
+
+//     &__description {
+//         // @include paraMobile;
+//         margin: 1.5rem 1rem 0;
+//     }
+
+//     // // ==============tablet====================
+//     @include tablet {
+
+//         &__title {
+//             margin: 3rem 0 1.5rem;
+//         }
+//         &__content {
+//             margin: auto 1.5rem;
+//         }
+       
+//         &__channel {
+//            display: flex;
+//            justify-content: space-between;
+//         //    margin: auto 1.5rem;
+//         }
+//         &__title-heading {
+//             @include hOneTablet;
+//         }
+//         &__channel-heading {
+//             margin: 0;
+//         }
+
+//         &__description {
+//             @include paraTablet;
+//             margin: 2.5rem 0 4rem 1.5rem;
+//             width: 519px;
+//         }
+    
+//     }
+
+//     // ==================desktop=========================
+//     @include desktop {
+//         &__content {
+//             width: 712px;
+//         }
+
+
+//     }
+
+
 }
