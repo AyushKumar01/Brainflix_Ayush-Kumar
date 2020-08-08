@@ -19,7 +19,7 @@ function Header() {
               <input className="header__form-input" type="text" name="search"  placeholder="Search.."/>
             </form>
             <div className="header__right">
-              <img className="header__right-plus" src={upload} />
+              <img className="header__right-plus" src={upload} alt="upload"/>
               <button className="header__right-btn">UPLOAD</button>
               <div className="header__right-image"></div>
             </div>

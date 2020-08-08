@@ -51,13 +51,17 @@ margin: 2.5rem 1rem 0;
             @include hForeTablet;
         }
         
-    &__item-channel {
-        @include paraTablet;
-    }
+        &__item-channel {
+            @include paraTablet;
+        }
 
     }
 
+// =============desktop==================
 
+    @include desktop {
+        margin: 2.5rem 0 0 0;
+    }
 
 
 }
