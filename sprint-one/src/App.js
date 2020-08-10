@@ -5,6 +5,7 @@ import Header from './component/Header';
 import Hero from './component/Hero';
 import Main from './component/Main';
 import VideoList from './component/VideoList/VideoList';
+import { format } from 'timeago.js';
 
 class App extends React.Component {
     state = { 
@@ -76,12 +77,12 @@ class App extends React.Component {
                     likes: '110,985',
                     duration: '0:00 / 0:42',
                     video: 'type of <string>',
-                    timestamp: '12/18/2018',
+                    timestamp: format('08/07/2018', 'en_US'),
                     comments: [
                         {
                             'id': uuidv4(),
                             'name':'Micheal Lyons',
-                            'timestamp': '12/18/2018',
+                            'timestamp': format('08/08/2020', 'en_US'),
                             'comment': 'They BLEW the ROOF off at their last show, \
                                             once everyone started figuring out they were going. \
                                             This is still simply the greatest opening of a concert \
@@ -90,7 +91,7 @@ class App extends React.Component {
                         {
                             'id': uuidv4(),
                             'name':'Gary Wong',
-                            'timestamp': '12/12/2018',
+                            'timestamp': format('08/05/2020', 'en_US'),
                             'comment': 'Every time I see him shred I feel so \
                                             motivated to get off my couch and \
                                             hop on my board. He’s so talented! I \
@@ -100,7 +101,7 @@ class App extends React.Component {
                         {
                             'id': uuidv4(),
                             'name':'Theodore Duncan',
-                            'timestamp': '11/15/2018',
+                            'timestamp': format('07/08/2020', 'en_US'),
                             'comment': 'How can someone be so good!!! \
                                             You can tell he lives for this and \
                                             loves to do it every day. Everytime I \

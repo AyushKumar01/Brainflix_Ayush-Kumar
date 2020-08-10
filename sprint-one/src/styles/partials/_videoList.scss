@@ -1,40 +1,36 @@
 .videos {
-margin: 2.5rem 1rem 0;
-    &__heading {
-        @include hForeMobile;
-        color: $backgroundColor;
-    }
+    margin: 2.5rem 1rem 0;
+        &__heading {
+            @include hForeMobile;
+            color: $backgroundColor;
+        }
 
-    &__item-image {
-        border-radius: 5px;
-        width: 120px;
-        height: 70px;
-    }
+        &__item-image {
+            border-radius: 5px;
+            width: 120px;
+            height: 70px;
+        }
 
-    &__item {
-        display: flex;
-        margin-bottom: 1.5rem;
-    }
+        &__item {
+            display: flex;
+            margin-bottom: 1.5rem;
+        }
 
-    &__item-boxOne {
-        margin-right: 16px;
-    }
-    &__item-boxTwo {
-        
-    }
+        &__item-boxOne {
+            margin-right: 16px;
+        }
 
-    &__item-title {
-        margin: 0;
-        // width: 135px;
-        height: 36px;
-        overflow: hidden;
-        @include hForeMobile;
-    }
+        &__item-title {
+            margin: 0;
+            height: 36px;
+            overflow: hidden;
+            @include hForeMobile;
+        }
 
-    &__item-channel {
-        margin: 0.5rem 0 ;
-        @include paraMobile;
-    }
+        &__item-channel {
+            margin: 0.5rem 0 ;
+            @include paraMobile;
+        }
     // ==============tablet=================
 
     @include tablet {

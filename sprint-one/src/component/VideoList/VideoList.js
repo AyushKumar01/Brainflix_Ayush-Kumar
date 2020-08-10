@@ -9,9 +9,7 @@ function VideoList(props) {
             <ul className="videos__list">
                 {props.sidebarVideos.map((video, id) => (
                 <VideoListItem key={video.id} videoData={video} />))}
-             
             </ul>
-            
         </section>
     );
 }

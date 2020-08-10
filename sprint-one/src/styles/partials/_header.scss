@@ -8,15 +8,10 @@
      
     &__logo {
         height: 3rem;
-
-        // display: flex;
-        // flex-direction: column;
     }
 
     &__logo-image {
         margin-top: 0.7rem;
-        // height: 48px;
-        // width: auto;
     }
 
     &__form {
@@ -67,12 +62,12 @@
 
     &__right-plus {
         position: absolute;
-        top: 1rem;
-        left: 4rem;
+        top: 35%;
+        left: 20%;
     }
 
 
-    // ==================table=====================
+    // ==================tablet=====================
 
     @include tablet {
         flex-direction: row;

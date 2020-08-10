@@ -34,7 +34,7 @@ function Main(props) {
                 <p className="main__description">{props.mainVideo.description}</p>
             </div>
             <CommentForm />
-            {props.mainVideo.comments.map((comm) => (<Comments comment={comm} key={comm.id}/> ))}
+            {props.mainVideo.comments.map((element) => (<Comments review={element} key={element.id}/> ))}
         </div>
     );
 }

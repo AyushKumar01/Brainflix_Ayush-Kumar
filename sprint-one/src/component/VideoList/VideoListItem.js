@@ -4,7 +4,7 @@ function VideoListItem(props) {
     return (
         <li className="videos__item">
             <div className="videos__item-boxOne">
-                <img className="videos__item-image" src={props.videoData.image} alt="" />
+                <img className="videos__item-image" src={props.videoData.image} alt="video" />
             </div>
             <div className="videos__item-boxTwo">
                 <h4 className="videos__item-title">{props.videoData.title}</h4>

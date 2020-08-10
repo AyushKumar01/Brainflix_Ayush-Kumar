@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/app.css';
 import logo from '../assets/logo/logo-brainflix.png';
-// import font-awesome from 'font-awesome';
 import search from '../assets/icons/png/search.png';
 import upload from '../assets/icons/png/upload.png';
 

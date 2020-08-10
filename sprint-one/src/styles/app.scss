@@ -10,12 +10,11 @@
 @import './partials/comments';
 @import './partials/videoList';
 
-// body {
-// 	background: skyblue;
-// }
+// use in app.js
 .lowerDom{
     @include desktop{
             display: flex;
-            margin: auto 180px;
+            justify-content: center;
+            margin: auto 11.25rem;
     }
 }
