@@ -2,7 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './styles/app.css';
 import Header from './component/Header';
-import Upload from './component/Upload';
+// import Upload from './component/Upload';
 import Hero from './component/Hero';
 import Main from './component/Main';
 import VideoList from './component/VideoList/VideoList';
@@ -117,7 +117,7 @@ render (){
   return (
     <>
       <Header />
-      <Upload />
+      {/* <Upload /> */}
       <Hero mainVideo={this.state.mainVideo} />
       <div className="lowerDom">
       <Main mainVideo={this.state.mainVideo} />

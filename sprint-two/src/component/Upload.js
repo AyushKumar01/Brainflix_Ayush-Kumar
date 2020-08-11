@@ -1,9 +1,13 @@
 import React from 'react'
 import upload from '../assets/images/upload.jpg';
+import Header from './Header';
+
 // import FontAwesome from '../../node_modules/font-awesome/fonts';
 
 function Upload() {
     return (
+        <>
+        <Header />
         <section className="upload">
             <h1  className="upload__heading">Upload Video</h1>
             <div className="upload__wrapper">
@@ -23,6 +27,7 @@ function Upload() {
                 <button className="upload__btn-publish" type="submit">PUBLISH</button>
             </div>
         </section>
+        </>
     )
 }
 
