@@ -1,0 +1,21 @@
+
+@import './partials/fonts';
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/resets';
+@import './partials/header';
+@import './partials/hero';
+@import './partials/main';
+@import './partials/commentsForm';
+@import './partials/comments';
+@import './partials/videoList';
+@import './partials/upload';
+
+// use in app.js
+.lowerDom{
+    @include desktop{
+            display: flex;
+            justify-content: center;
+            margin: auto 11.25rem;
+    }
+}

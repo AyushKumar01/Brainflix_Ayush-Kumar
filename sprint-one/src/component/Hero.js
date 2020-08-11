@@ -5,7 +5,7 @@ import fullscreen from '../assets/icons/png/fullscreen.png';
 import volume from '../assets/icons/png/volume.png';
 
 function Hero(props) {
-    // console.log('video', props.mainVideo);
+    //console.log('video', props.mainVideo);
     return (
         <section className='hero' >
             <div className='hero__wrapper'>

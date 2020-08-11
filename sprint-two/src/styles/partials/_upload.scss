@@ -1,0 +1,116 @@
+.upload {
+    margin: 0 5vw;
+    &__heading {
+        padding: 1.5rem 0 2rem 0;
+        margin: 0;
+    }
+    &__image {
+        height: 153px;
+        width: 288px;
+        margin-bottom: 2rem;
+        border-radius: 0.25rem;
+    }
+    &__form-title {
+        width: 100%;
+        height: 3rem;
+        border-radius: 0.25rem;
+        border: 1px solid $backgroundColor;
+        margin-bottom: 1.5rem;
+        text-indent: 1rem;
+    }
+    &__form-description {
+        width: 100%;
+        height: 143px;
+        border-radius: 0.25rem;
+        border: 1px solid $backgroundColor;
+        padding: 1rem 1rem;
+    }
+    &__btn {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__btn-publish {
+        background-color: $brightBlue;
+        border-radius: 0.25rem;
+        border: transparent;
+        color: $white;
+        height: 3rem;
+        width: 18rem;
+        margin-top: 2rem;
+    }
+    &__btn-cancel {
+        background-color: transparent;
+        border: transparent;
+        height: 3rem;
+        width: 18rem;
+        color: $brightBlue;
+    }  
+    &__label {
+        font-weight: 600;
+        font-size: 0.75rem;
+        color: $backgroundColor;
+    }
+// ===============tablet====================
+    @include tablet {
+        margin: 0 3.15vw;
+
+        &__heading {
+            @include hOneTablet;
+            padding: 3rem 0 2rem 0;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 2.5rem;
+        }
+        &__image {
+            width: 21.5rem;
+            height: 11.437rem;
+            margin-bottom: 2.5rem;
+        }
+        &__wrapper {
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 2.5rem;
+        }
+        &__form-title {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        &__form-description {
+            font-size: 1.35rem;
+        }
+        &__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 2.5rem 0;
+        }
+        &__btn-publish {
+            width: 10rem;
+            margin: 0;
+        }
+        &__btn-cancel {
+            width: 10rem;
+        }
+        &__label {
+            font-size: 1rem;
+        }
+    }
+// ==============desktop================
+    @include desktop {
+        margin: 0 12.5vw;
+
+        &__image {
+            margin-right: 1.5rem;
+        }
+        &__wrapper {
+            display: flex;
+            padding: 0;
+        }
+        &__form {
+            flex-grow: 1;
+        }
+        &__form-description {
+            height: 94px;
+        }
+    }
+// ======end-bracket-of-upload-below========
+}
