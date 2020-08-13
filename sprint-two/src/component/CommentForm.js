@@ -11,7 +11,7 @@ function CommentForm() {
                     <label className="comments__form-label">JOIN THE CONVERSATION</label><br/>
                     <div className="comments__form-box">
                         <textarea className="comments__form-message" type="text" name="reviewerComment" 
-                                  placeholder="That was easily the most spectacular BMX moment ever.">
+                                  placeholder="Write comment here">
                         </textarea><br/>
                         <Btn text="COMMENT" className="comments__form-btn"/>
                     </div>

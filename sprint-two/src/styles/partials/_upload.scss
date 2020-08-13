@@ -34,6 +34,7 @@
         background-color: $brightBlue;
         border-radius: 0.25rem;
         border: transparent;
+        cursor: pointer;
         color: $white;
         height: 3rem;
         width: 18rem;
@@ -42,9 +43,11 @@
     &__btn-cancel {
         background-color: transparent;
         border: transparent;
+        cursor: pointer;
         height: 3rem;
         width: 18rem;
         color: $brightBlue;
+        font-weight: bold;
     }  
     &__label {
         font-weight: 600;

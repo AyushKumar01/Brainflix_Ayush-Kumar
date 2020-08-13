@@ -91,7 +91,8 @@
 
         @include desktop {
             width: 50vw;
-            margin-left: 0;  
+            margin-left: 0; 
+            margin-right: unset; 
             &__inside {
                 width: 624px;
             }
@@ -99,5 +100,7 @@
 //                 width: 32.77vw;
 //                 font-weight: normal;
 //             }
+
+          
         }
 }

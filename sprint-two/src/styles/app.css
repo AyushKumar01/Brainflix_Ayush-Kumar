@@ -445,11 +445,16 @@ ul {
 }
 
 @media screen and (min-width: 1440px) {
+  .main {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
   .main__content {
-    width: 49.44vw;
+    margin-right: unset;
     margin-left: 0;
+    padding-right: 32px;
   }
   .main__description {
+    margin-right: unset;
     margin-left: 0;
     width: 36.04vw;
   }
@@ -500,6 +505,7 @@ ul {
   width: 70vw;
   padding: 0.9rem;
   line-height: 1.25rem;
+  font-size: 14px;
 }
 
 .comments__form-btn {
@@ -556,6 +562,7 @@ ul {
     margin-left: 0;
   }
   .comments__block {
+    margin-right: unset;
     margin-left: 0;
   }
   .comments__form-message {
@@ -645,6 +652,7 @@ ul {
   .reviews {
     width: 50vw;
     margin-left: 0;
+    margin-right: unset;
   }
   .reviews__inside {
     width: 624px;
@@ -665,6 +673,9 @@ ul {
   border-radius: 5px;
   width: 120px;
   height: 70px;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .videos__item {
@@ -672,6 +683,15 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.5rem;
+}
+
+.videos__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: unset;
+  cursor: unset;
 }
 
 .videos__item-boxOne {
@@ -713,7 +733,7 @@ ul {
 
 @media screen and (min-width: 1440px) {
   .videos {
-    margin: 2.5rem 0 0 0;
+    margin: 2.5rem 0 0 1.5rem;
   }
 }
 
@@ -767,6 +787,7 @@ ul {
   background-color: #0095ff;
   border-radius: 0.25rem;
   border: transparent;
+  cursor: pointer;
   color: #ffffff;
   height: 3rem;
   width: 18rem;
@@ -776,9 +797,11 @@ ul {
 .upload__btn-cancel {
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
   height: 3rem;
   width: 18rem;
   color: #0095ff;
+  font-weight: bold;
 }
 
 .upload__label {

@@ -42,6 +42,8 @@
         width: 70vw;
         padding: 0.9rem;
         line-height: 1.25rem;
+        font-size: 14px;
+
     }
 
     
@@ -97,10 +99,12 @@
     // ====================comments-desktop====================
      
         @include desktop {
+
             &__heading {
                margin-left: 0;
             }
             &__block {
+                margin-right: unset;
                 margin-left: 0;
             }
 

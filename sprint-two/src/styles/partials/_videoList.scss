@@ -9,11 +9,20 @@
             border-radius: 5px;
             width: 120px;
             height: 70px;
+            cursor: pointer;
+            object-fit: cover;
         }
 
         &__item {
             display: flex;
             margin-bottom: 1.5rem;
+        }
+
+        &__link {
+            display: flex;
+            text-decoration: none;
+            color: unset;
+            cursor: unset;
         }
 
         &__item-boxOne {
@@ -56,7 +65,8 @@
 // =============desktop==================
 
     @include desktop {
-        margin: 2.5rem 0 0 0;
+        margin: 2.5rem 0 0 1.5rem;
+        
     }
 
 

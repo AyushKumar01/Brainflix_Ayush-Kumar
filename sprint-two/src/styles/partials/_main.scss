@@ -99,12 +99,16 @@
 
     // ==================desktop=========================
     @include desktop {
+        border-right: 1px solid $backgroundColor;
         &__content {
-            width: 49.44vw;
+            margin-right: unset;
+            // width: 49.44vw;
             margin-left: 0;
+            padding-right: 32px;
         }
 
         &__description {
+            margin-right: unset;
             margin-left: 0;
             width: 36.04vw;
         }
