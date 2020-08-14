@@ -3,6 +3,7 @@ import '../styles/app.css';
 import play from '../assets/icons/png/play.png';
 import fullscreen from '../assets/icons/png/fullscreen.png';
 import volume from '../assets/icons/png/volume.png';
+import pause from '../assets/icons/png/pause.png';
 
 function Hero(props) {
     //console.log('video', props.mainVideo);
@@ -10,6 +11,7 @@ function Hero(props) {
         <section className='hero' >
             <div className='hero__wrapper'>
                 <button className='hero__play'><img src={play} alt="play" /></button>
+                {/* <button className='hero__pause'><img src={pause} alt="play" /></button> */}
                 <div className='hero__progress-bar'>
                     <div className='hero__progress-timeline'></div>
                     <div className='hero__progress-text'>{props.mainVideo.duration}</div>

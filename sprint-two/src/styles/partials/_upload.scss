@@ -5,8 +5,10 @@
         margin: 0;
     }
     &__image {
-        height: 153px;
-        width: 288px;
+        // height: 153px;
+        max-width: 100%;
+        height: auto;
+        width: 18rem;
         margin-bottom: 2rem;
         border-radius: 0.25rem;
     }
@@ -34,9 +36,10 @@
         background-color: $brightBlue;
         border-radius: 0.25rem;
         border: transparent;
-        cursor: pointer;
+        cursor: pinter;
         color: $white;
         height: 3rem;
+        max-width: 100%;
         width: 18rem;
         margin-top: 2rem;
     }
@@ -45,6 +48,7 @@
         border: transparent;
         cursor: pointer;
         height: 3rem;
+        max-width: 100%;
         width: 18rem;
         color: $brightBlue;
         font-weight: bold;

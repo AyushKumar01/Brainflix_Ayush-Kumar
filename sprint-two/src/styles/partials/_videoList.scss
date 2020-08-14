@@ -16,6 +16,7 @@
         &__item {
             display: flex;
             margin-bottom: 1.5rem;
+            // flex-wrap: wrap;
         }
 
         &__link {
@@ -23,6 +24,7 @@
             text-decoration: none;
             color: unset;
             cursor: unset;
+            // flex-wrap: wrap;
         }
 
         &__item-boxOne {

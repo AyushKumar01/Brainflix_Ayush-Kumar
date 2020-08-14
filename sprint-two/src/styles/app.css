@@ -125,10 +125,10 @@ ul {
 }
 
 .header__right-plus {
-  position: absolute;
-  top: 35%;
-  left: 20%;
   cursor: pointer;
+  position: relative;
+  top: 2px;
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -186,10 +186,9 @@ ul {
 }
 
 .hero {
-  min-width: 20rem;
-  height: 11.43rem;
   background-color: #000000;
   position: relative;
+  line-height: 0;
 }
 
 .hero__video {
@@ -312,6 +311,9 @@ ul {
   .hero__wrapper {
     width: 91.5vw;
     padding: 0 0.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .hero__progress-bar {
     position: relative;
@@ -380,6 +382,8 @@ ul {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main__channel-heading {
@@ -747,8 +751,9 @@ ul {
 }
 
 .upload__image {
-  height: 153px;
-  width: 288px;
+  max-width: 100%;
+  height: auto;
+  width: 18rem;
   margin-bottom: 2rem;
   border-radius: 0.25rem;
 }
@@ -787,9 +792,10 @@ ul {
   background-color: #0095ff;
   border-radius: 0.25rem;
   border: transparent;
-  cursor: pointer;
+  cursor: pinter;
   color: #ffffff;
   height: 3rem;
+  max-width: 100%;
   width: 18rem;
   margin-top: 2rem;
 }
@@ -799,6 +805,7 @@ ul {
   border: transparent;
   cursor: pointer;
   height: 3rem;
+  max-width: 100%;
   width: 18rem;
   color: #0095ff;
   font-weight: bold;

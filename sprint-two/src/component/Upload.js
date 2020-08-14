@@ -2,8 +2,6 @@ import React from 'react'
 import upload from '../assets/images/upload.jpg';
 import Header from './Header';
 
-// import FontAwesome from '../../node_modules/font-awesome/fonts';
-
 function Upload() {
     return (
         <>
@@ -17,9 +15,17 @@ function Upload() {
                 </div>
                 <form className="upload__form">
                     <label className="upload__form-label upload__label">TITLE YOUR VIDEO</label><br/> 
-                    <input className="upload__form-title" type="text" name="title" placeholder="Add a title to your video" /><br/>
+                    <input className="upload__form-title" 
+                           type="text" name="title" 
+                           placeholder="Add a title to your video" 
+                    />
+                    <br/>
                     <label className="upload__form-label upload__label">ADD A VIDEO DESCRIPTION</label><br/>
-                    <textarea className="upload__form-description" type="text" name="description" placeholder="Add a description of your video"></textarea><br/>
+                    <textarea className="upload__form-description" 
+                              type="text" name="description" 
+                              placeholder="Add a description of your video"
+                    />
+                    <br/>
                 </form>
             </div>    
             <div className="upload__btn">

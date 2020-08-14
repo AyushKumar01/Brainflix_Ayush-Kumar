@@ -69,10 +69,11 @@
     }
 
     &__right-plus {
-        position: absolute;
-        top: 35%;
-        left: 20%;
         cursor: pointer;
+        position: relative;
+        top: 2px;
+        padding-right: 10px;
+
     }
 
 

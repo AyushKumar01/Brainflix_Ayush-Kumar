@@ -29,11 +29,8 @@
     &__channel-second {
         display: flex;
         align-items: baseline;
+        flex-wrap: wrap;
     }
-    // &__channel-fistBox{
-    //     display: flex;
-    // }
-
 
     &__channel-heading {
         margin: 0 0.5rem 2rem 0;

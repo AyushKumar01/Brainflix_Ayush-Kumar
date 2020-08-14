@@ -1,8 +1,9 @@
 .hero{
-      min-width: 20rem;
-      height: 11.43rem;
+    //   min-width: 20rem;
+    //   height: 11.43rem;
       background-color:$black;
       position:relative; 
+      line-height: 0;
 
       &__video {
           object-fit: cover;
@@ -36,6 +37,25 @@
             outline: 0;
         }
     }
+
+    // &__pause {
+    //     width: 3rem;
+    //     padding: 0.62rem;
+    //     border-radius: 0.25rem;
+    //     color: $white;
+    //     background: rgba($black, 0.4);
+    //     border: unset;
+    //     box-shadow: unset;
+    //     &:hover,
+    //     &:focus,
+    //     &:active {
+    //         cursor: pointer;
+    //         background: rgba($black, 1);
+    //         outline: 0;
+    //     }
+
+    // }    
+
     &__progress-bar {
         position: relative;
         flex-grow: 1;
@@ -106,6 +126,8 @@
             // width: 43.75rem;
             width: 91.5vw;
             padding: 0 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         &__progress-bar {
