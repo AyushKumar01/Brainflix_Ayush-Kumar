@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import '../styles/app.css';
 import logo from '../assets/logo/logo-brainflix.png';
 import search from '../assets/icons/png/search.png';
-import { Link } from 'react-router-dom'
 import upload from '../assets/icons/png/upload.png';
 
 function Header() {

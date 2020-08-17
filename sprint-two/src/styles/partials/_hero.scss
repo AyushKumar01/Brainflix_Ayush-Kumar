@@ -1,12 +1,11 @@
 .hero{
-    //   min-width: 20rem;
-    //   height: 11.43rem;
       background-color:$black;
       position:relative; 
       line-height: 0;
 
       &__video {
           object-fit: cover;
+          filter: brightness(120%);
           width: 100%;
           height: 100%;
       }
@@ -29,6 +28,7 @@
         background: rgba($black, 0.4);
         border: unset;
         box-shadow: unset;
+        // z-index: 1;
         &:hover,
         &:focus,
         &:active {
@@ -37,15 +37,17 @@
             outline: 0;
         }
     }
-
+// =============still-working-on-it=================
     // &__pause {
     //     width: 3rem;
+    //     height: 2.5rem;
     //     padding: 0.62rem;
     //     border-radius: 0.25rem;
     //     color: $white;
     //     background: rgba($black, 0.4);
     //     border: unset;
     //     box-shadow: unset;
+    //     position: absolute;
     //     &:hover,
     //     &:focus,
     //     &:active {
@@ -53,8 +55,8 @@
     //         background: rgba($black, 1);
     //         outline: 0;
     //     }
-
-    // }    
+    // } 
+// =============still-working-on-it=================   
 
     &__progress-bar {
         position: relative;
@@ -79,11 +81,9 @@
         text-align: center;
         font-size: 8px;
     }
-
     &__btn-group {
         display: flex;
         width: 5rem;
-       
     }
     &__btn-item {
         width: 3rem;
@@ -99,21 +99,16 @@
             background: rgba($black, 1);
             outline: 0;
         }
-
-       
     }
-
-    &__btn-item-one {
+    &__fullscreen {
       border-radius: 0.25rem 0 0  0.25rem;
     }
-
-    &__btn-item-two {
+    &__volume {
       border-radius: 0 0.25rem  0.25rem 0;
     }
 
 // ================tablet========================
     @include tablet {
-        // min-width: 48rem;
         height: 25rem;
         padding: 0 2rem;
 
@@ -123,26 +118,20 @@
             height: 100%;
         }
         &__wrapper {
-            // width: 43.75rem;
             width: 91.5vw;
             padding: 0 0.5rem;
             left: 50%;
             transform: translateX(-50%);
         }
-
         &__progress-bar {
             position: relative;
-            // width: 32.43rem;
             width: 100%;
             flex-grow: 0.93;
             margin: 0 1rem;
         }
-
         &__progress-text {
           font-size: 0.75rem;
         }
-    
-  
     }
 
 // ================desktop========================
@@ -159,12 +148,9 @@
           height: 100%;
       }
       &__wrapper {
-          // width: 59rem;
           width: 65.55vw;
           padding: 0 1rem;
       }
-
-
       &__progress-bar {
           width: 46.93rem;
       }

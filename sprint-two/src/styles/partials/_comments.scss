@@ -7,7 +7,6 @@
         border-bottom: 1px solid $backgroundColor;
         display: flex;
     }
-
     &__image {
         background-color: $backgroundColor;
         width: 2.5rem;
@@ -15,92 +14,56 @@
         border-radius: 50%;
         margin-right: 0.5rem;
     }
-
     &__inside {
         width: 80vw;
     }
-
-    &__inside-first {
+    &__inside-upper {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
     }
-
-    &__inside-first-para {
+    &__inside-upper-para {
         margin: 0;
         &--color {
             color: $backgroundColor;
             font-weight: bold;
         }
     }
-
-    &__inside-second-para {
+    &__inside-lower-para {
         margin-bottom: 1.5rem;
         margin-top: 0.5rem;
         font-weight: normal;
-        
-        // width: 67.18vw;
+    }
+// ==============reviews-tablet==================
+    
+    @include tablet {
+        width: 94.73vw;
+        margin: 0 1.5rem 1.5rem;
+
+        &__image {
+            margin-right: 1rem;
+        }
+        &__inside-upper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+        &__inside-upper-para {
+            margin-right: .75rem;
+        }
+        &__inside-lower-para {
+          @include paraTablet;
+        }
     }
 
+ // ===============reviews-desktop============
 
-    // ==============reviews-tablet==================
-    
-        @include tablet {
-            width: 94.73vw;
-            margin: 0 1.5rem 1.5rem;
-
-//             &__block {
-//                 border-bottom: 1px solid $backgroundColor;
-//                 width: 68.75vw;
-//             }
-        
-//             &__inside {  
-//                 width: unset;
-//                 // padding: 24px 0 8px 0;
-//             }
-            &__image {
-                margin-right: 1rem;
-            }
-
-            // &__inside {
-            //     width: 624px;
-            // }
-
-
-            &__inside-first {
-
-                display: flex;
-                justify-content: flex-start;
-                align-items: baseline;
-            }
-
-            &__inside-first-para {
-                margin-right: .75rem;
-            }
-
-//             &__inside-second-para {
-//                 // margin-bottom: 24px;
-//                 width: 61.458vw;
-//                 font-weight: normal;
-//             }
-        }
-
-//     // ===============reviews-desktop============
-
-
-        @include desktop {
-            width: 50vw;
-            margin-left: 0; 
-            margin-right: unset; 
-            &__inside {
-                width: 624px;
-            }
-//             &__inside-second-para {
-//                 width: 32.77vw;
-//                 font-weight: normal;
-//             }
-
-          
-        }
+    @include desktop {
+        width: 50vw;
+        margin-left: 0; 
+        margin-right: unset; 
+        &__inside {
+            width: 624px;
+        }         
+    }
 }
