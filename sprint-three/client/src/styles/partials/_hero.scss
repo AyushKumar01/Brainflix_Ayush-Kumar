@@ -1,0 +1,163 @@
+.hero{
+      background-color:$black;
+      position:relative; 
+      line-height: 0;
+
+      &__video {
+          object-fit: cover;
+          filter: brightness(120%);
+          width: 100%;
+          height: 100%;
+      }
+      &__wrapper {
+          position:absolute;
+          z-index: 11;
+          padding: 0 1rem;
+          bottom: 0.5rem;
+          width: 100%;
+          height: 2.5rem;
+          display: flex;
+          justify-content: space-between;
+      }
+
+      &__play {
+        width: 3rem;
+        padding: 0.62rem;
+        border-radius: 0.25rem;
+        color: $white;
+        background: rgba($black, 0.4);
+        border: unset;
+        box-shadow: unset;
+        // z-index: 1;
+        &:hover,
+        &:focus,
+        &:active {
+            cursor: pointer;
+            background: rgba($black, 1);
+            outline: 0;
+        }
+    }
+// =============still-working-on-it=================
+    // &__pause {
+    //     width: 3rem;
+    //     height: 2.5rem;
+    //     padding: 0.62rem;
+    //     border-radius: 0.25rem;
+    //     color: $white;
+    //     background: rgba($black, 0.4);
+    //     border: unset;
+    //     box-shadow: unset;
+    //     position: absolute;
+    //     &:hover,
+    //     &:focus,
+    //     &:active {
+    //         cursor: pointer;
+    //         background: rgba($black, 1);
+    //         outline: 0;
+    //     }
+    // } 
+// =============still-working-on-it=================   
+
+    &__progress-bar {
+        position: relative;
+        flex-grow: 1;
+        margin: 0 0.5rem;
+        padding: 0.62rem;
+        border-radius: 0.25rem;
+        color: $white;
+        background: rgba($black, 0.4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__progress-timeline {
+        height: 0.2rem;
+        margin: 0 0.6rem;
+        background: $black;
+        border-radius: 0.5rem;
+        flex-grow: 1;
+    }
+    &__progress-text {
+        text-align: center;
+        font-size: 8px;
+    }
+    &__btn-group {
+        display: flex;
+        width: 5rem;
+    }
+    &__btn-item {
+        width: 3rem;
+        padding: 0.62rem;
+        color: $white;
+        background: rgba($black, 0.4);
+        border: unset;
+        box-shadow: unset;
+        &:hover,
+        &:focus,
+        &:active {
+            cursor: pointer;
+            background: rgba($black, 1);
+            outline: 0;
+        }
+    }
+    &__fullscreen {
+      border-radius: 0.25rem 0 0  0.25rem;
+    }
+    &__volume {
+      border-radius: 0 0.25rem  0.25rem 0;
+    }
+
+// ================tablet========================
+    @include tablet {
+        height: 25rem;
+        padding: 0 2rem;
+
+        &__video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        &__wrapper {
+            width: 91.5vw;
+            padding: 0 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__progress-bar {
+            position: relative;
+            width: 100%;
+            flex-grow: 0.93;
+            margin: 0 1rem;
+        }
+        &__progress-text {
+          font-size: 0.75rem;
+        }
+    }
+
+// ================desktop========================
+    @include desktop { 
+ 
+      width: 100%;
+      height: 33.75rem;
+      padding-left: 15.5rem;
+      padding-right: 15.5rem;
+
+      &__video {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+      }
+      &__wrapper {
+          width: 65.55vw;
+          padding: 0 1rem;
+      }
+      &__progress-bar {
+          width: 46.93rem;
+      }
+
+  }
+  // ===============hero-end-bracket================
+}
+
+ 
+

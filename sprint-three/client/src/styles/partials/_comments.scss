@@ -1,0 +1,69 @@
+
+.reviews {   
+    color: $lightBlack;
+    margin: 0 1rem 1.5rem;
+
+    &__block {
+        border-bottom: 1px solid $backgroundColor;
+        display: flex;
+    }
+    &__image {
+        background-color: $backgroundColor;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+    &__inside {
+        width: 80vw;
+    }
+    &__inside-upper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__inside-upper-para {
+        margin: 0;
+        &--color {
+            color: $backgroundColor;
+            font-weight: bold;
+        }
+    }
+    &__inside-lower-para {
+        margin-bottom: 1.5rem;
+        margin-top: 0.5rem;
+        font-weight: normal;
+    }
+// ==============reviews-tablet==================
+    
+    @include tablet {
+        width: 94.73vw;
+        margin: 0 1.5rem 1.5rem;
+
+        &__image {
+            margin-right: 1rem;
+        }
+        &__inside-upper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+        &__inside-upper-para {
+            margin-right: .75rem;
+        }
+        &__inside-lower-para {
+          @include paraTablet;
+        }
+    }
+
+ // ===============reviews-desktop============
+
+    @include desktop {
+        width: 50vw;
+        margin-left: 0; 
+        margin-right: unset; 
+        &__inside {
+            width: 624px;
+        }         
+    }
+}

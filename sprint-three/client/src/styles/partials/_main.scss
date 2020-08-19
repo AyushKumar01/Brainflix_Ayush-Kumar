@@ -1,0 +1,87 @@
+.main {
+    &__content {
+       border-bottom: 1px solid $backgroundColor;
+       padding-bottom: 1.5rem;
+       margin: auto 1rem;
+    }
+    &__title {
+        margin: 1.75rem 0 1rem 0;
+    }
+    &__title-heading {
+        @include hOneMobile;
+        margin: 0;
+    }
+    &__channel-name {
+        display: flex;
+        align-items: baseline;
+    }
+    &__channel-count {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    &__channel-heading {
+        margin: 0 0.5rem 2rem 0;
+    }
+    &__channel-views {
+        display: flex;
+        margin-right: 2.5rem;
+    }
+    &__channel-likes {
+        display: flex;
+    }
+    &__channel-views-icon {
+        margin-right: 0.5rem;
+    }
+    &__channel-likes-icon {
+        margin-right: 0.5rem;
+    }
+    &__description {
+        margin: 1.5rem 1rem 0;
+    }
+
+    // // ==============tablet====================
+    @include tablet {
+        &__title {
+            margin: 3rem 0 1.5rem;
+        }
+        &__content {
+            margin: auto 1.5rem;
+        }
+        &__channel {
+           display: flex;
+           justify-content: space-between;
+        }
+        &__channel-views {
+            margin-right: 1.5rem;
+        }
+        &__title-heading {
+            @include hOneTablet;
+        }
+        &__channel-heading {
+            margin: 0 0.5rem 0 0;
+        }
+        &__description {
+            @include paraTablet;
+            margin: 2.5rem 0 4rem 1.5rem;
+            width: 68.28vw;
+        }
+    }
+
+    // ==================desktop=========================
+    @include desktop {
+        border-right: 1px solid $backgroundColor;
+        &__content {
+            margin-right: unset;
+            margin-left: 0;
+            padding-right: 32px;
+        }
+        &__description {
+            margin-right: unset;
+            margin-left: 0;
+            width: 36.04vw;
+        }
+    }
+
+
+}
