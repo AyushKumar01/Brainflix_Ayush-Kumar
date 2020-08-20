@@ -3,10 +3,11 @@ import './styles/app.css';
 import Hero from './component/Hero';
 import Main from './component/Main';
 import VideoList from './component/VideoList/VideoList';
-import { API_KEY } from './component/env/env_variable';
+// import { API_KEY } from './component/env/env_variable';
 import axios from "axios";
 
-const SEARCH_URL  = "https://project-2-api.herokuapp.com/videos";
+const SEARCH_URL  = "http://localhost:5000/videos";
+// https://project-2-api.herokuapp.com/
 
 class App extends React.Component {
   state = {
@@ -21,7 +22,8 @@ class App extends React.Component {
   getVideos = () => {
       let id = this.props.match.params.id || "1af0jruup5gu";
       axios
-        .get(`${SEARCH_URL}/${API_KEY}`)
+        // .get(`${SEARCH_URL}/${API_KEY}`)
+        .get(`${SEARCH_URL}`)
         .then((response) =>
           this.setState({
             sidebarVideos: response.data
@@ -33,7 +35,8 @@ class App extends React.Component {
   }
 
   searchVideoByID = (ID) => {
-      axios.get(`${SEARCH_URL}/${ID}/${API_KEY}`).then((response) =>
+      // axios.get(`${SEARCH_URL}/${ID}/${API_KEY}`).then((response) =>
+      axios.get(`${SEARCH_URL}/${ID}`).then((response) =>
         this.setState({
           mainVideo: response.data,
           sidebarVideos : this.state.sidebarVideos.filter(video => video.id !== ID)
@@ -55,7 +58,8 @@ class App extends React.Component {
     if(comment){
       const commentObj = { "name": "Ayush Kumar", "comment": comment };
       axios
-          .post(`${SEARCH_URL}/${videoId}/comments${API_KEY}`, commentObj)
+          // .post(`${SEARCH_URL}/${videoId}/comments${API_KEY}`, commentObj)
+          .post(`${SEARCH_URL}/${videoId}/comments`, commentObj)
           .then((response) =>
           {
             let mainVideoNew = {...this.state.mainVideo}
