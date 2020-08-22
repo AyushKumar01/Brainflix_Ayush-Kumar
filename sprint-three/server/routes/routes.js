@@ -6,7 +6,8 @@ const videosController = require('../controllers/videosController'); // import c
 router.get('/', videosController.listVideos);
 router.get('/:id', videosController.getVideoByID);
 router.post('/:id/comments', videosController.addComment);
-// router.put('/:id', videosController.updateVideo);
+router.post('/', videosController.uploadVideo);
+router.put('/:id/likes', videosController.likeVideo);
 // router.delete('/:id', videosController.deleteVideo);
 
 // export routes

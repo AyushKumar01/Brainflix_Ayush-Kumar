@@ -3,7 +3,7 @@ const app = express(); // init app so we can use methods like app.get app.listen
 const cors = require('cors');
 require('dotenv').config();
 const { PORT, BACKEND_URL } = process.env;
-const videosRoute = require('./routes/videosRoute');
+const videosRoute = require('./routes/routes');
 
 
 
@@ -14,7 +14,7 @@ app.use(cors());
 
 app.get('/', (_req, res) => {
   res.json({
-    greeting: 'Welcome to my new first API',
+    greeting: 'Welcome in my API WORLD',
   });
 });
 

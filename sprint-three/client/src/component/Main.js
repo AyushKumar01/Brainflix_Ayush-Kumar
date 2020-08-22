@@ -7,10 +7,21 @@ import { format } from 'timeago.js';
 
 function Main(props) {
     const { title, channel, timestamp, comments, views, likes, description } = props.mainVideo;
+    
+    //format function of timeago.js
     const timeStamp = format(new Date(timestamp));
     const commentsNew = comments;
+
+    //comment sorting by time
     if(commentsNew){
         commentsNew.sort(function(a, b){ return b.timestamp - a.timestamp });
+    }
+     
+    //Used to convert normal integer into string with comma
+    //To show the number e.g 1234567 as "1,234,567"
+    let likesString = likes; 
+    if(likesString){
+        likesString = likesString.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
     return (
@@ -30,8 +41,8 @@ function Main(props) {
                             <span>{views}</span>
                         </div>
                         <div className="main__channel-likes">
-                            <img className="main__channel-likes-icon" src={like} alt="likes" />
-                            <span>{likes}</span>
+                           <img onClick={props.handleLikesClick} className="main__channel-likes-icon" src={like} alt="likes" />
+                            <span>{likesString}</span>
                         </div>
                     </div>
                 </div>

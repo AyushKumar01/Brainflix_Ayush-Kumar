@@ -29,8 +29,12 @@
             height: 36px;
             overflow: hidden;
             @include hForeMobile;
+            // for auto space between title and channel in new feed
+            // display: flex;
+            // flex-direction: column;
         }
         &__item-channel {
+            // margin-top: auto;
             margin: 0.5rem 0 ;
             @include paraMobile;
         }

@@ -3,12 +3,9 @@ import './styles/app.css';
 import Hero from './component/Hero';
 import Main from './component/Main';
 import VideoList from './component/VideoList/VideoList';
-// import { API_KEY } from './component/env/env_variable';
 import axios from "axios";
 
 const SEARCH_URL  = "http://localhost:5000/videos";
-// https://project-2-api.herokuapp.com/
-
 class App extends React.Component {
   state = {
     sidebarVideos: [],
@@ -19,10 +16,10 @@ class App extends React.Component {
       this.getVideos();
   }
 
+   // get request function
   getVideos = () => {
       let id = this.props.match.params.id || "1af0jruup5gu";
       axios
-        // .get(`${SEARCH_URL}/${API_KEY}`)
         .get(`${SEARCH_URL}`)
         .then((response) =>
           this.setState({
@@ -33,9 +30,8 @@ class App extends React.Component {
           })
         );
   }
-
+  // for main video in banner
   searchVideoByID = (ID) => {
-      // axios.get(`${SEARCH_URL}/${ID}/${API_KEY}`).then((response) =>
       axios.get(`${SEARCH_URL}/${ID}`).then((response) =>
         this.setState({
           mainVideo: response.data,
@@ -50,7 +46,7 @@ class App extends React.Component {
       }
   }
 
-
+   //  this function for post new comment.
   handleCommentSubmit = ((event) => {
     event.preventDefault();
     const videoId = this.state.mainVideo.id;
@@ -58,7 +54,6 @@ class App extends React.Component {
     if(comment){
       const commentObj = { "name": "Ayush Kumar", "comment": comment };
       axios
-          // .post(`${SEARCH_URL}/${videoId}/comments${API_KEY}`, commentObj)
           .post(`${SEARCH_URL}/${videoId}/comments`, commentObj)
           .then((response) =>
           {
@@ -75,12 +70,27 @@ class App extends React.Component {
     }
   );
 
+  handleLikesClick = ((event) => {
+    console.log(`click`)
+    event.preventDefault();
+    const videoId = this.state.mainVideo.id;
+    axios
+        .put(`${SEARCH_URL}/${videoId}/likes`)
+        .then((response) => response.data)
+        .then((data) => {
+          let mainVideoNew = {...this.state.mainVideo};
+          mainVideoNew.likes = data.likes;
+          this.setState({mainVideo: mainVideoNew});    
+        });  
+    }
+  );
+
   render (){
     return (
       <>
         <Hero mainVideo={this.state.mainVideo} />
         <div className="lowerDom">
-          <Main mainVideo={this.state.mainVideo} handleCommentSubmit={this.handleCommentSubmit} />
+          <Main mainVideo={this.state.mainVideo} handleCommentSubmit={this.handleCommentSubmit} handleLikesClick={this.handleLikesClick} />
           <VideoList sidebarVideos={this.state.sidebarVideos} />
         </div>
       </>
