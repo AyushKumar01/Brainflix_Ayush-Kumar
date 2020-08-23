@@ -253,6 +253,19 @@ ul {
           align-items: center;
 }
 
+.hero__progress-bar::after {
+  content: '';
+  position: absolute;
+  left: var(--vid-progress);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+}
+
 .hero__progress-timeline {
   height: 0.2rem;
   margin: 0 0.6rem;
@@ -297,6 +310,11 @@ ul {
 
 .hero__volume {
   border-radius: 0 0.25rem  0.25rem 0;
+}
+
+.hero__volumeImage {
+  height: 20px;
+  width: 20px;
 }
 
 @media screen and (min-width: 768px) {

@@ -70,6 +70,19 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    &__progress-bar::after {
+        content: '';
+        position: absolute;
+        left: var(--vid-progress);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: white;
+    }
+
     &__progress-timeline {
         height: 0.2rem;
         margin: 0 0.6rem;
@@ -105,6 +118,10 @@
     }
     &__volume {
       border-radius: 0 0.25rem  0.25rem 0;
+    }
+    &__volumeImage{
+        height: 20px;
+        width: 20px;
     }
 
 // ================tablet========================
