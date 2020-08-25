@@ -29,7 +29,7 @@
             height: 36px;
             overflow: hidden;
             @include hForeMobile;
-            // for auto space between title and channel in new feed
+            // for auto space between title and channel in new feed (not requirement)
             // display: flex;
             // flex-direction: column;
         }

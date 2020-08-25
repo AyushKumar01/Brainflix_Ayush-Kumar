@@ -23,6 +23,7 @@
         font-weight: bold;
         font-family: 'AvenirNext LT Pro';
         color: black;
+        outline: none;
     }
     &__form-description {
         width: 100%;
@@ -33,6 +34,7 @@
         font-weight: bold;
         font-family: 'AvenirNext LT Pro';
         color: black;
+        outline: none;
     }
     &__btn {
         display: flex;
@@ -44,6 +46,7 @@
         border-radius: 0.25rem;
         border: transparent;
         cursor: pointer;
+        outline: none;
         color: $white;
         height: 3rem;
         max-width: 100%;
@@ -54,6 +57,7 @@
         background-color: transparent;
         border: transparent;
         cursor: pointer;
+        outline: none;
         height: 3rem;
         max-width: 100%;
         width: 18rem;

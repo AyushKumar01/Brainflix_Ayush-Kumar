@@ -6,15 +6,11 @@
     &__heading {
         margin-bottom: 2.5rem;
     }
-
     &__block {
         display: flex;
         border-bottom: 1px solid $backgroundColor;
         padding-bottom: 2rem;
-        
     }
-
-    
     &__image {
         background-image: url(../assets/images/Mohan-muruge.jpg);
         background-size: cover; 
@@ -32,7 +28,6 @@
         height: 3rem;
         width: 70vw;
     }
-
     &__form-message {
         background-color: $offWhite;
         border: 1.5px solid $brightBlue;
@@ -43,15 +38,13 @@
         padding: 0.9rem;
         line-height: 1.25rem;
         font-size: 14px;
-        // font-weight: bold;
-        // font-family: 'AvenirNext LT Pro';
-        // color: black;
+        outline: none;
     }
-
-    
     &__form-btn {
         background-color: $brightBlue;
         border: transparent;
+        outline: none;
+        cursor: pointer;
         color: $white;
         border-radius: 0.25rem;
         height: 7.868vh;
@@ -59,7 +52,6 @@
         font-weight: bold;
         letter-spacing: 1px;
     }
-
     &__form-label {
         color: $backgroundColor;
         font-weight: bold;
@@ -73,25 +65,20 @@
                 margin-left: 1.5rem;
                 margin-bottom: 2rem;
             }
-
             &__block {
                 margin: auto 1.5rem;
-                // width: 68.75vw;
                 padding: unset;
             }
-           
             &__form-box {
                 display: flex;
                 align-items: baseline;
             }
-
             &__form-message {
                 width: 57.89vw;
                 height: 3rem;
                 line-height: unset;
                 margin: 0.5rem 1rem 1.5rem 0;
             }
-            
             &__form-btn {
                 width: 21.05vw;
                 height: 3rem;
@@ -109,15 +96,12 @@
                 margin-right: unset;
                 margin-left: 0;
             }
-
             &__form-message {
                 width: 30.55vw;
             }
-
             &__form-btn {
                 width: 11.11vw;
             }
-    
         }
 // ====================comments-end-bracket==========================
 }

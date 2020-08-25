@@ -1,5 +1,4 @@
 .header {
-    // margin: auto 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,21 +9,17 @@
     &__logo {
         height: 3rem;
     }
-
     &__logo-image {
         margin-top: 0.7rem;
     }
-
     &__form {
         position: relative;
     }
-
     &__form-label {
         position: absolute;
         top: 0.9rem;
         left: 0.9rem;
     }
-
     &__form-input {
         border-radius: 0.25rem;
         background-color: $offWhite;
@@ -32,33 +27,27 @@
         height: 3rem;
         width: 90vw;
         text-indent: 2.5rem;
+        outline: none;
     }
-
     &__right{
         display: flex;
         margin: 0.5rem 0 1rem 0;
         position: relative;
-        // width: 288px;
     }
-
     &__right-btn {
        background-color: $brightBlue;
        border-radius: 4px;
        border-color: transparent;
        cursor: pointer;
        width: 100%;
-    // width: 70vw;
        height: 48px;
-    //    margin-right: 1rem;
        color: $white;
-
+       outline: none;
     }
-
     &__right-btn-link{
         flex-grow: 1;
         margin-right: 1rem;
     }
-
     &__right-image {
         background-image: url(../assets/images/Mohan-muruge.jpg);
         background-size: cover; 
@@ -68,55 +57,38 @@
         border-radius: 50%;
         background-color: $backgroundColor;
     }
-
     &__right-plus {
         cursor: pointer;
         position: relative;
         top: 2px;
         padding-right: 1rem;
-
     }
-
-
     // ==================tablet=====================
 
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
         padding: 0 3.15vw;
-        // margin: auto 3.15vw;
         height: 5rem;
-
-        &__logo {
-            // margin-right: 169px;
-        }
-
         &__half {
             display: flex;
             align-items: center;
-
         }
-
         &__form-input {
             margin-right: 1.5rem;
             width: 28.94vw;
         }
-
         &__right {
             margin: 0;
         }
-
         &__right-btn {
             width: 15.13vw;
             margin-right: 1.5rem;
         }
-
         &__right-btn-link{
             flex-grow: unset;
             margin-right: unset;
         }
-
-        
         &__right-plus {
             left: 0.5rem;
         }
@@ -125,14 +97,11 @@
 //   ============desktop==================
 
     @include desktop {
-        // margin: auto 12.5vw;
         padding: 0 12.5vw;
 
         &__form-input {
             width: 15.27vw;
         }
-
-
         &__right-btn {
             width: 7.98vw;
         }

@@ -19,7 +19,6 @@
           display: flex;
           justify-content: space-between;
       }
-
       &__play {
         width: 3rem;
         padding: 0.62rem;
@@ -28,7 +27,6 @@
         background: rgba($black, 0.4);
         border: unset;
         box-shadow: unset;
-        // z-index: 1;
         &:hover,
         &:focus,
         &:active {
@@ -37,27 +35,6 @@
             outline: 0;
         }
     }
-// =============still-working-on-it=================
-    // &__pause {
-    //     width: 3rem;
-    //     height: 2.5rem;
-    //     padding: 0.62rem;
-    //     border-radius: 0.25rem;
-    //     color: $white;
-    //     background: rgba($black, 0.4);
-    //     border: unset;
-    //     box-shadow: unset;
-    //     position: absolute;
-    //     &:hover,
-    //     &:focus,
-    //     &:active {
-    //         cursor: pointer;
-    //         background: rgba($black, 1);
-    //         outline: 0;
-    //     }
-    // } 
-// =============still-working-on-it=================   
-
     &__progress-bar {
         position: relative;
         flex-grow: 1;
@@ -69,30 +46,30 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+         
     }
-
-    &__progress-bar::after {
-        content: '';
-        position: absolute;
-        left: var(--vid-progress);
-        top: 50%;
-        transform: translateY(-50%);
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background: white;
-    }
-
     &__progress-timeline {
+        position: relative;
         height: 0.2rem;
         margin: 0 0.6rem;
         background: $black;
         border-radius: 0.5rem;
         flex-grow: 1;
+        &:after {
+            content: '';
+            position: absolute;
+            left: var(--vid-progress);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.9rem;
+            height: 0.9rem;
+            border-radius: 50%;
+            background: white;
+        }
     }
     &__progress-text {
         text-align: center;
-        font-size: 8px;
+        font-size: 0.5rem;
     }
     &__btn-group {
         display: flex;

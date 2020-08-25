@@ -8,6 +8,11 @@ import mute from '../assets/icons/png/mute.png';
 
 // import videoSrc from '../assets/video/keyboardcat.mp4';
 
+
+
+//=============still working on it==============
+//=============still working on it==============
+//===========please ignore the comments ========
 class Hero extends Component {
     videoPlayer = React.createRef();
     videoPlayerTime = React.createRef();
@@ -60,7 +65,7 @@ class Hero extends Component {
 
         const ratio = videoTimeElapsed / videoLength;
         const fraction = ratio - Math.floor(ratio);
-        const percentage = 85 * fraction;
+        const percentage = 99 * fraction;
 
         // const percentageTrimmed = percentage.toFixed(0);
 
@@ -123,20 +128,33 @@ class Hero extends Component {
         return (
             <section className='hero' >
                 <div className='hero__wrapper'>
-                    <button className='hero__play' onClick={this.videoPlayerClickHandler}><img src={this.state.play === true ? play : pause} alt="play"/></button>
+                    <button className='hero__play' onClick={this.videoPlayerClickHandler}>
+                        <img src={this.state.play === true ? play : pause} alt="play"/>
+                    </button>
                     <div className='hero__progress-bar'>
                         <div className='hero__progress-timeline'></div>
-                        {/* <div className='hero__progress-text'>{this.state.videoTime} / {this.state.duration}</div> */}
-                        <time className="hero__progress-text" ref={this.videoPlayerTime}> {this.state.videoTime} / {this.state.duration}</time>
+                        <time className="hero__progress-text" 
+                              ref={this.videoPlayerTime}> 
+                              {this.state.videoTime} / {this.state.duration}
+                        </time>
                     </div>
                     <div className='hero__btn-group'>    
-                        <button className='hero__btn-item hero__fullscreen' onClick={this.videoPlayerScreenClickHandler}><img src={fullscreen} alt="fullscreen"/></button>
-                        <button className='hero__btn-item hero__volume'><img className='hero__volumeImage' src={this.state.mute === true ? mute : volume} alt="volume" onClick={this.videoPlayerVolumeClickHandler}/></button>
+                        <button className='hero__btn-item hero__fullscreen' 
+                                onClick={this.videoPlayerScreenClickHandler}>
+                                <img src={fullscreen} alt="fullscreen"/>
+                        </button>
+                        <button className='hero__btn-item hero__volume'>
+                                <img className='hero__volumeImage' 
+                                src={this.state.mute === true ? mute : volume} alt="volume" 
+                                onClick={this.videoPlayerVolumeClickHandler}/>
+                        </button>
                     </div>
                 </div>
-                <video className='hero__video' poster={image} ref={this.videoPlayer} src={video} onClick={this.videoPlayerClickHandler}
-                        // ref={this.props.myVideo}
-                >
+                <video className='hero__video' 
+                    poster={image} 
+                    ref={this.videoPlayer} 
+                    src={video} 
+                    onClick={this.videoPlayerClickHandler}>
                 </video>
             </section>
         );

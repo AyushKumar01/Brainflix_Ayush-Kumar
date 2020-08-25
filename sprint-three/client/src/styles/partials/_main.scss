@@ -38,15 +38,13 @@
         cursor: pointer;
         transition-duration: 0.4s;
         &:hover {
-         color: red;
-         box-shadow: 0 30px 16px 0 rgba(255,0,0,0.24);
+         box-shadow: 0 20px 16px 0 rgba(0,0,0,0.5);
         }
     }
     &__description {
         margin: 1.5rem 1rem 0;
     }
-
-    // // ==============tablet====================
+     // ==============tablet====================
     @include tablet {
         &__title {
             margin: 3rem 0 1.5rem;

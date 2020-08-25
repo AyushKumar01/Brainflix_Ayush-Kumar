@@ -1,7 +1,6 @@
 const fs = require('fs'); // file system module
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
-// const { load } = require('dotenv/types');
 
 // json data to read and write
 const videosFile = path.join(__dirname, '../db/videos.json');
@@ -40,14 +39,6 @@ function getByID(req, callback){
     });
 }
 
-function Comment(name, comment) {
-    this.id = uuidv4();
-    this.name = name;
-    this.comment = comment;
-    this.timestamp = new Date().getTime();
-    this.likes = 0;
-}
-
 function Video(data) {
     this.id = uuidv4();
     this.channel = "Brain Station";
@@ -55,7 +46,7 @@ function Video(data) {
     this.views = "786";
     this.likes = "101";
     this.duration = "5:00";
-    this.video = "https://project-2-api.herokuapp.com/stream";
+    this.video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
     this.timestamp = new Date().getTime();
     this.title = data.title;
     this.description = data.description;
@@ -84,6 +75,24 @@ function Video(data) {
                     ]
 }
 
+
+// common function
+function writeNewDataInFile(videos) {
+    fs.writeFile(videosFile, JSON.stringify(videos), (error) => {
+          if (error) console.log(error);
+          console.log("file has been saved");
+        }
+      );
+}
+
+function Comment(name, comment) {
+    this.id = uuidv4();
+    this.name = name;
+    this.comment = comment;
+    this.timestamp = new Date().getTime();
+    this.likes = 0;
+}
+
 function addComment(data, id, callback){
     loadVideos((videos) => {
         const comment = new Comment(data.name, data.comment);
@@ -99,13 +108,6 @@ function addComment(data, id, callback){
     });    
 }
 
-function writeNewDataInFile(videos) {
-    fs.writeFile(videosFile, JSON.stringify(videos), (error) => {
-          if (error) console.log(error);
-          console.log("file has been saved");
-        }
-      );
-}
 
 function uploadVideo(data){
     loadVideos((videos) => {

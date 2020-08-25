@@ -70,6 +70,7 @@ class App extends React.Component {
     }
   );
 
+  // this function to likes
   handleLikesClick = ((event) => {
     console.log(`click`)
     event.preventDefault();
@@ -90,7 +91,10 @@ class App extends React.Component {
       <>
         <Hero mainVideo={this.state.mainVideo} />
         <div className="lowerDom">
-          <Main mainVideo={this.state.mainVideo} handleCommentSubmit={this.handleCommentSubmit} handleLikesClick={this.handleLikesClick} />
+          <Main mainVideo={this.state.mainVideo} 
+                handleCommentSubmit={this.handleCommentSubmit} 
+                handleLikesClick={this.handleLikesClick} 
+          />
           <VideoList sidebarVideos={this.state.sidebarVideos} />
         </div>
       </>

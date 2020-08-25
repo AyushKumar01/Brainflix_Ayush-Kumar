@@ -41,7 +41,7 @@ function Main(props) {
                             <span>{views}</span>
                         </div>
                         <div className="main__channel-likes">
-                           <img onClick={props.handleLikesClick} className="main__channel-likes-icon" src={like} alt="likes" />
+                            <img onClick={props.handleLikesClick} className="main__channel-likes-icon" src={like} alt="likes" />
                             <span>{likesString}</span>
                         </div>
                     </div>

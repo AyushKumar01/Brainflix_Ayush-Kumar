@@ -7,7 +7,6 @@ function listVideos(_req, res) {
         }
     );
 }
-
 // get video by id
 function getVideoByID(req, res) {
     videos.getByID(req, (mainVideo) => {
