@@ -89,6 +89,8 @@ class App extends React.Component {
                                             This is still simply the greatest opening of a concert \
                                             I have EVER witnessed.',
                         },
+
+                        
                         {
                             'id': uuidv4(),
                             'name':'Gary Wong',
