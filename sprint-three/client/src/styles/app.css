@@ -266,6 +266,17 @@ ul {
           flex-grow: 1;
 }
 
+.hero__progress-timeline::before {
+  content: '';
+  position: absolute;
+  width: var(--vid-progress);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  background-color: blue;
+  height: 0.2rem;
+}
+
 .hero__progress-timeline:after {
   content: '';
   position: absolute;

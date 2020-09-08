@@ -43,8 +43,8 @@ function Video(data) {
     this.id = uuidv4();
     this.channel = "Brain Station";
     this.image = '../images/upload.jpg';
-    this.views = "786";
-    this.likes = "101";
+    this.views = "0";
+    this.likes = "0";
     this.duration = "5:00";
     this.video = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
     this.timestamp = new Date().getTime();
